@@ -221,7 +221,7 @@ def main(config_, save_path, args):
 
             save(config, model, save_path, 'last')
         
-        save(None, model, save_path, f"epoch_{epoch}")
+        save(config, model, save_path, f"{epoch}")
         
         if (epoch_val is not None) and (epoch % epoch_val == 0):
             result1, result2, result3, result4, metric1, metric2, metric3, metric4 = eval_psnr(val_loader, model,

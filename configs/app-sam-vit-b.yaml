@@ -101,7 +101,7 @@ multi_step_lr:
   milestones:
   - 1
   gamma: 0.1
-epoch_val: none
+epoch_val: -1
 epoch_save: 1
 
 #resume: 60
